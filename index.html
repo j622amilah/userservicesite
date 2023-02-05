@@ -9,13 +9,8 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script lang="js">
     
-
     <meta name="google-signin-client_id" content="224463091033-okvre3a92sfrlk39inqfhjq33ma2t8dm.apps.googleusercontent.com">
 
-
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-    
     function onSignIn(googleUser) {
       var profile = googleUser.getBasicProfile();
       console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -24,31 +19,32 @@
       console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     }
     
-    
-    
-
-<body>
-    <h1>GitHub page as PWA for Google Fit API: Health fitness watch!</h1>
-    
-  <script>
+    <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
           '/userservicesite/sw.js',
           {scope: '/userservicesite/'}
         )
       }
-  </script>
+    </script>
   
-  <a href="#" onclick="signOut();">Sign out</a>
-  
-  <script>
+    <script>
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
           console.log('User signed out.');
         });
       }
-  </script>
+    </script>
+
+<body>
+  <h1>GitHub page as PWA for Google Fit API: Health fitness watch!</h1>
+  
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  
+  <a href="#" onclick="signOut();">Sign out</a>
+  
+  
   
 </body>
 </html>
