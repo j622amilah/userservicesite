@@ -10,7 +10,7 @@
     <script lang="js">
     
 
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="224463091033-okvre3a92sfrlk39inqfhjq33ma2t8dm.apps.googleusercontent.com">
 
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -25,19 +25,11 @@
     }
     
     
-    <a href="#" onclick="signOut();">Sign out</a>
-    <script>
-      function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log('User signed out.');
-        });
-      }
-    </script>
+    
 
 <body>
     <h1>GitHub page as PWA for Google Fit API: Health fitness watch!</h1>
-    …
+    
   <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
@@ -46,5 +38,17 @@
         )
       }
   </script>
+  
+  <a href="#" onclick="signOut();">Sign out</a>
+  
+  <script>
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log('User signed out.');
+        });
+      }
+  </script>
+  
 </body>
 </html>
