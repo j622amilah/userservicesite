@@ -6,7 +6,7 @@
   "description": "Github Page as a Progressive Web App",
  
   // Scope and start URL - these need to change to yours
-  "scope": "/userservicesite/",
+  "scope": "/userservicesite/", "https://www.googleapis.com/auth/script.external_request",
   "start_url": "/userservicesite/",
  
   // colours of the app as displayed in the installer
