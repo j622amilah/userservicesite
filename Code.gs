@@ -1,5 +1,5 @@
-var CLIENT_ID = '...';
-var CLIENT_SECRET = '...';
+var CLIENT_ID = '224463091033-okvre3a92sfrlk39inqfhjq33ma2t8dm.apps.googleusercontent.com';
+var CLIENT_SECRET = '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';
 
 /**
  * Authorizes and makes a request to the GitHub API.
