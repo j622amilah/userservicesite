@@ -9,7 +9,14 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script lang="js">
     
-  
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/userservicesite/sw.js',
+          {scope: '/userservicesite/'}
+        )
+      }
+    </script>
 
 <body>
   <h1>GitHub Reporting Page</h1>
