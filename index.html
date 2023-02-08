@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub page as PWA for Google Fit API: Health fitness watch!</title>
+  <title>GitHub Reporting Page</title>
   <link rel="canonical" href="https://j622amilah.github.io/userservicesite/" />
   <link rel="manifest" href="/userservicesite/manifest.webmanifest">
 </head>
@@ -36,12 +36,20 @@
         });
       }
     </script>
+  
+  <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("out.html"); 
+    });
+    </script> 
 
 <body>
-  <h1>GitHub page as PWA for Google Fit API: Health fitness watch!</h1>
+  <h1>GitHub Reporting Page</h1>
   <img src="park_rainbow.png" alt="bienvienue">
   <div class="g-signin2" data-onsuccess="onSignIn"></div>
   
+  <div id="includedContent"></div>
   <a href="#" onclick="signOut();">Sign out</a>
   
   
