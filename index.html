@@ -17,11 +17,17 @@
         )
       }
     </script>
-  
+
+<script type="text/javascript">
+$(document).ready(function () {
+	setTimeout(function () {
+		alert('Reloading Page');
+		window.location.reload(true);
+	}, 50);
+	});
+</script>
   
   <script LANGUAGE='JavaScript'>
-    $(document).ready(function () { window.setTimeout(function () {window.alert("Message"); window.location.reload(true); }, 20); });
-    
     function rclassification(){
       window.alert('Opening...');
       window.location.href='https://j622amilah.github.io/userservicesite/r-classification.html';
