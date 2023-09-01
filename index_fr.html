@@ -1,0 +1,102 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'informations sur la science des données</title>
+  <link rel="canonical" href="https://j622amilah.github.io/userservicesite/" />
+  <link rel="manifest" href="/userservicesite/manifest.webmanifest">
+</head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script lang="js">
+    
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/userservicesite/sw.js',
+          {scope: '/userservicesite/'}
+        )
+      }
+    </script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	setTimeout(function () {
+		alert('Reloading Page');
+		window.location.reload(true);
+	}, 50);
+	});
+</script>
+  
+  <script LANGUAGE='JavaScript'>
+    function rclassification(){
+      window.alert('Ouverture...');
+      window.location.href='https://j622amilah.github.io/userservicesite/r-classification.html';
+    }
+    
+    function rclassification_rmd(){
+      window.alert('Ouverture...');
+      window.location.href='https://j622amilah.github.io/userservicesite/r-classification_Rmdrender.html';
+    }
+    
+    function code_example(){
+      window.alert('Ouverture...');
+      window.location.href='https://j622amilah.github.io/userservicesite/code_example.rmd';
+    }
+    
+    <--Chocolate-->
+    function rclassification_ipynb(){
+      window.alert('En progres...');
+      window.location.href='https://www.kaggle.com/code/jamilahfoucher/r-classification';
+    }
+    
+    
+  </script>
+  
+  
+
+<body>
+  <h1>Page d'informations sur la science des données</h1>
+Il est important de présenter les résultats de la science des données d'une manière facile à comprendre pour obtenir des informations sur les données. Cette page explore différentes manières de signaler des informations.
+  <br>
+  <img src="park_rainbow.png" alt="bienvienue">
+  
+  <!--Comment-->
+  <p style="font-size:20px">[0] Blogs professionnels</p>
+  La première et la plus remarquable façon de rapporter des informations consiste à présenter des guides/tutoriels clairs à l’aide de blogs professionnels en science des données.
+  <br>
+  <button onclick="location.href = 'https://medium.com/@j622amilah';" id="myButton" class="float-left submit-button" >Practicing DatScy sur Medium <span class="wave">👋</span></button>
+  <br>
+	
+  <p style="font-size:20px">[1] Webapps Machine Learning/Deep Learning (modèles plus complexes en cours !!)</p>
+  Voir un modèle prédire un résultat directement à partir des données permet aux autres de mieux comprendre leurs données, permettant ainsi de trouver des informations sur les données ! 
+  <ul>
+  <li><a id="redirect popup" href="https://github.com/j622amilah/streamlit_apps/">Text category prediction webapp</a> (out of service streamlit webapp) </li>
+  </ul> 
+  <br>
+	
+  <p style="font-size:20px">[2] Applications Web Google Apps Scripts (d'autres à venir !)</p>
+  Voir les données résumées dans une figure qui se met à jour dynamiquement par rapport aux données permet aux autres de résumer et de comprendre leurs données, permettant ainsi de trouver des informations sur les données !
+  <ul>
+  <li><a id="redirect popup" href="https://script.google.com/macros/s/AKfycbzdatlcxME8jF3jpwmzfizMkn1Z-9DDBhjOXM9aknaZbAdWnpygUYAmQgX7yA31KfUa/exec">Google BigQuery Connected Sheet Dashboard with Google Apps Scripts</a> (GET request webapp) &#128196; </li>
+  </ul> 
+  <br>
+	
+  <p style="font-size:20px">[3] Rapports d'études de cas formatés</p>
+  Un format de rapport classique pour les projets formels d'analyse de données. Il est important d'avoir un document expliquant clairement les objectifs, les attentes/exigences et les livrables mesurables de réussite d'un projet, afin d'avoir un environnement de travail stable, calme et productif. Ces rapports d'études de cas utilisant l'organisation Google Analytics sont formatés de telle sorte que des projets clairs, logiques et compréhensibles soient créés et exécutés avec succès en équipe (même si les résultats sont moins souhaitables) ; travailler en équipe et suivre des objectifs logiques à court et à long terme crée un succès éventuel.   
+  <ul>
+  <li><a id="redirect popup" href="https://github.com/j622amilah/Case_Studies">Une collection d'études de cas d'analyse de données utilisant l'organisation Google Analytics/Business Intelligence</a>  </li>
+  </ul>
+  <br>
+
+ <p style="font-size:20px">[4] Rapports rendus à partir de scripts Jupyter-notebook</p>
+  Le maintien d'un bloc-notes de code propre et organisé peut être transformé directement en rapport à l'aide d'outils de rendu pdf/html. Ici, j'ai testé différentes façons de restituer un bloc-notes au format HTML pour le partage de sites Web. Cette méthode serait plus utile si un modèle de rapport était utilisé pour afficher un format de rapport cohérent.
+  <ul>
+  <li><a id="redirect popup" href="https://j622amilah.github.io/userservicesite/r-classification.html" onclick="rclassification();">Analyse du chocolat de classification R!</a> (Rendu par juypter-notebook : ipynb converti en html) &#127851; </li>
+  <li><a id="redirect popup" href="https://j622amilah.github.io/userservicesite/r-classification_Rmdrender.html" onclick="rclassification_rmd();">Analyse du chocolat de classification R!</a> (Rendu par R Knit à l'aide du fichier Rmd) &#127851; </li>
+  <li><a id="redirect popup" href="https://j622amilah.github.io/userservicesite/code_example.rmd" onclick="code_example();">Analyse du chocolat de classification R!</a> (Télécharger, Rmd) &#127851; </li>
+  <li><a id="redirect popup" href="https://www.kaggle.com/code/jamilahfoucher/r-classification" onclick="rclassification_ipynb();">Analyse du chocolat de classification R!</a> (Kaggle, ipynb) &#127851; </li>
+  </ul> 
+  <br>
+
+</body>
+</html>
