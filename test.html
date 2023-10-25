@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TEST</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head><html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TEST</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+<style>
+
+</style>
+<script LANGUAGE='JavaScript'>
+    function canPlayH264 () {
+        var v = document.createElement('video');
+        alert('The video is loaded');
+        return !!(v.canPlayType && v.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"').replace(/no/, ''));
+    }
+</script>
+<body>
+    <main>
+    <div class="text-center">
+        <!--<video controls playsinline>-->
+         <!--<video id="loadvideo" width="100%" height="400px" preload="auto" onloadeddata="canPlayH264();"> -->
+         <video width="300" height="300" autoplay>
+            <source src="/home/ec2-user/environment/exercise-transcribe-translate/Raf01_320.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+            <p>
+                <!--rainVideo.addEventListener("loadeddata", myRunFunction, false);-->
+                <!--with jQuery-->
+                <!--$(rainVideo).on("loadeddata", myRunFunction);-->
+            </p>
+        </video>
+      </div>
+</body>
+</html>
+<style>
+
+</style>
+<script LANGUAGE='JavaScript'>
+    function canPlayH264 () {
+        var v = document.createElement('video');
+        alert('The video is loaded');
+        return !!(v.canPlayType && v.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"').replace(/no/, ''));
+    }
+</script>
+<body>
+    <main>
+    <div class="text-center">
+        <!--<video controls playsinline>-->
+         <!--<video id="loadvideo" width="100%" height="400px" preload="auto" onloadeddata="canPlayH264();"> -->
+         <video width="300" height="300" autoplay>
+            <source src="s3://practice3-transcribe/Raf01_320.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+            <p>
+                <!--rainVideo.addEventListener("loadeddata", myRunFunction, false);-->
+                <!--with jQuery-->
+                <!--$(rainVideo).on("loadeddata", myRunFunction);-->
+            </p>
+        </video>
+      </div>
+</body>
+</html>
