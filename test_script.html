@@ -1,12 +1,40 @@
 <html>
 <head>
+  <!--Go to link: https://j622amilah.github.io/userservicesite/test_script.html-->
+  <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Welcome to this test application!!</title>
 
- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+ <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
 <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
 </head>
 
 <body>
-   <py-script> print('Hello py-script!') </py-script>
+<h1>Application to share my best OpenAI model prompts</h1>
+
+<p>Select a desired prompt topic \U0001F642</p>
+ 
+ <!--Input text example-->
+ <!--<input type="text" name="text_input" id="text_input" placeholder="Enter a statement, question, or announcement:" />-->
+
+ <!--Radio button example-->
+ <input id="rad1" type="radio" name="gpt-4" value="1"><label for="rad1">1</label>
+ <input id="rad2" type="radio" name="gpt-3.5-turbo" value="2"><label for="rad2">2</label>
+ <input id="rad3" type="radio" name="davinci-002" value="3"><label for="rad3">3</label>
+ <input id="rad4" type="radio" name="babbage-002" value="4"><label for="rad4">4</label>
+ <input id="rad5" type="radio" name="text-davinci-003" value="5"><label for="rad5">5</label>
+
+  <!--Button example-->
+  <!--<button py-click="python_function_name">Translate</button>-->
+ 
+  <div id="output"></div>
+ 
+  <!--Call python script (main.py), using the installation requirements file (pyscript.json)-->
+  <script type="py" src="./main.py" config="./pyscript.json"></script>
+
+ <!--This prints a terminal window with python output text-->
+ <!--<py-script> print('Hello py-script!') </py-script>-->
+ 
 </body>
   
 </html>
