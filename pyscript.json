@@ -1,0 +1,3 @@
+{
+    "packages": ["openai", "numpy", "requests", "bs4"]
+}
