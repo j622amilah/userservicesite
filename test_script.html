@@ -12,29 +12,36 @@
 <body>
 <h1>Application to share my best OpenAI model prompts</h1>
 
-<p>Select a desired prompt topic \U0001F642</p>
+<p>Insert a phrase, select a prompt topic, and select a model. Then, see a reliable prompt structure and the model output using this prompt structure. </p>
  
- <!--Input text example-->
- <!--<input type="text" name="text_input" id="text_input" placeholder="Enter a statement, question, or announcement:" />-->
+ <!--Insert text-->
+ <input type="text" name="text_input" id="text0_name4python" placeholder="Insert a phrase, it can be a: statement, question, or announcement." />
 
- <!--Radio button example-->
- <input id="rad1" type="radio" name="gpt-4" value="1"><label for="rad1">1</label>
- <input id="rad2" type="radio" name="gpt-3.5-turbo" value="2"><label for="rad2">2</label>
- <input id="rad3" type="radio" name="davinci-002" value="3"><label for="rad3">3</label>
- <input id="rad4" type="radio" name="babbage-002" value="4"><label for="rad4">4</label>
- <input id="rad5" type="radio" name="text-davinci-003" value="5"><label for="rad5">5</label>
+ <!--Select a prompt type-->
+ <input type="text" name="text_input" id="text1_name4python" placeholder="Select a prompt topic. Copy-paste one of the following prompt topic names: sentiment, 
+   zeroshot, named_entity_recognition0, named_entity_recognition1, summarize, translate, missing_wordORfillmask, dataset_creation0, dataset_creation1,
+   transform_question_into_a_statement, text_similarity, create_questions_based_on_a_text, weekday_number" />
+  
+ <!--Radio button example: problem is that after the button is checked you can not uncheck it-->
+ <input id="rad1" type="radio" name="gpt-4" value="1"><label for="rad1">gpt-4</label>
+ <input id="rad2" type="radio" name="gpt-3.5-turbo" value="2"><label for="rad2">gpt-3.5-turbo</label>
+ <input id="rad3" type="radio" name="davinci-002" value="3"><label for="rad3">davinci-002</label>
+ <input id="rad4" type="radio" name="babbage-002" value="4"><label for="rad4">babbage-002</label>
+ <input id="rad5" type="radio" name="text-davinci-003" value="5"><label for="rad5">text-davinci-003</label>
 
   <!--Button example-->
-  <!--<button py-click="python_function_name">Translate</button>-->
- 
-  <div id="output"></div>
- 
+  <button py-click="run_selections">Click to see a the reliable prompt structure and the model output</button>
+
+  
   <!--Call python script (main.py), using the installation requirements file (pyscript.json)-->
   <script type="py" src="./main.py" config="./pyscript.json"></script>
+  
+  <!--This prints a terminal window with python output text-->
+  <!--<py-script> print('Hello py-script!') </py-script>-->
 
- <!--This prints a terminal window with python output text-->
- <!--<py-script> print('Hello py-script!') </py-script>-->
- 
+  <!--OUPUT from Python-->
+  <div id="output"></div>
+  
 </body>
   
 </html>
