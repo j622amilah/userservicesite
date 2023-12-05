@@ -37,7 +37,7 @@
     <br><br>
     <!--div is used to center both buttons together on the page-->
     <div style="width:100%;height:100%;position:absolute;vertical-align:middle;text-align:center;">
-      <button id="obs4" onclick="observation4()">Observation 4 (in progres)</button>&nbsp;&nbsp;&nbsp;
+      <button id="obs4" onclick="observation4()">Observation 4</button>&nbsp;&nbsp;&nbsp;
       <button id="obs5" onclick="observation5()">Observation 5 (in progres)</button>
     <div>
 
@@ -366,12 +366,43 @@ data engineer, data scientist, data science consultant, operations analyst, data
 
     <!-- --------------------------------------------------- -->
 
-    <h2 id="observation4_h2" style='display:none; text-align: left; margin-bottom: -35px;'>Observation 4: Can one be different from their PAST?</h2>
-
-    <p id="observation4_para_part0" style="display:none; text-align: left;">Things that one has learned, seen, and experienced are things that repeat in one’s life. One can not do or even think of doing something if one has not been exposed to it in some way. 
-    People who have past family histories of disaster and atrocity, like war and slavery, tell stories of the horrible events that happened to their children. It is positive to teach future generations about past history such that better future decision making can be made. And, it is also positive to understand one’s ancestry, and know where one comes from. However, there is a fine line where “history telling” of disaster becomes destructive. Children who are indoctrinated about past disasters are going to unconsciously recreate details about the disaster situation in their life, through unconscious thinking processes connected to memory. It is more likely that a child that was told family stories about slavery or war injustices is going to focus on injustices in their life, than a child that was not told these stories.
+    <h2 id="observation4_part0" style='display:none; text-align: left; margin-bottom: -35px;'>Observation 4: Can one be different from their PAST?</h2>
+    <br><br>
+    <p id="observation4_part1" style="display:none; text-align: left;">Things that one has learned, seen, and experienced are things that repeat in one’s life. One can not do or even think of doing something if one has not been exposed to it in some way. People who have family histories of disaster and atrocity, like war and slavery, past to their children historical stories of the events that happened. It is positive to teach future generations about past history, such that better future decision making can be made. And, it is also positive to understand one’s ancestry, and know where one comes from. However, there is a fine line where “history telling” of disaster becomes destructive. Children who are indoctrinated about past disaster stories may unconsciously recreate details about the disaster situation in their life, through unconscious thinking processes connected to memory. A child who was often told stories about slavery or war injustices, in comparison to a child that was not told these stories, may be more disposed to focus on injustices in their life.
+    <br><br>
     Watching films that realize historical disaster events, cultural and racial, may also have effects on perception of one’s treatment in their real-life. It is easier to repeat what was seen, said, heard, and experienced, than interpreting/analyzing the significance of what was observed without any direct connection to their life. Similar to visiting a museum or art exhibition, one does not directly correlate their real-life with the objects observed. Museum observers typically interpret and analyze the significance of the events and objects, but film observers often embody the events and stories that are told, copying the events that happened in films and/or stories in real-life in a certain manner.
-    It is more constructive to watch a film as entertainment with no direct implication to one’s life, than to associate one’s life with the injustices and events in a film. Unconsciously copying and recreating past historical disasters, due to excessive exposure and lack of abstract interpretation, may be linked to depression, misperception of reality, and social-economic dysfunction.</p>
+    <br><br>
+    It is more constructive to watch a film as entertainment with no direct implication to one’s life, than to associate one’s life with the injustices and events in a film. Unconsciously copying and recreating past historical disasters, due to excessive exposure and lack of abstract interpretation, may be linked to depression, mis-perception of reality, and social-economic dysfunction. One can be different from their past, if one is more observant, analyzes, and interprets information objectively.
+    <br><br>
+    In summary, in my opinion, if one can not clearly dissociate historical events and/or entertainment from their current life circumstances, one should be encouraged to adopt a perspective like a museum observer where the events and objects are not directly related to their life. More background information, from varying view-points, about the events and contents of films or “history stories” may help sensitive people who are influenced by what they experience be less influenced to unconsciously copy. For example, people who read a book about an event/story and then watch a film about the event/story, have a more analytical view point beyond the scope of the storyline. Analyzing the contents of the events allows one to have an objective viewpoint, without comparing one’s life to a film, and appreciate the creativity and intention of the filmmakers.  Thus allowing filmmakers to have more freedom of expression, without fear that theirs viewers may harm themselves, the environment, and others. 
+    <br><br>
+    In the Data Science prompt exercise 1 GPT shows that indeed experiencing violence is correlated with more violent behavior. In exercise 2, users are asked to analyze their personality and career with respect to the personality and career of a tv or movie character, in order to practice objective awareness of why one may feel like they embody a film character. By being actively aware of why one feels like they are similar to a character, one can dissociate with the character/s and become more like an objective museum observer instead of pretending that they are characters in a tv series/movie. 
+    </p>
+    <hr id="observation4_part2" style='display:none;' />
+    <h2 id="observation4_part3" style='display:none; text-align: left;'>Data Science Prompt</h2>
+    <!-- Exercise 1 -->
+    <h3 id="observation4_part4" style='display:none; text-align: left;'>Exercise 1: View a collective factual response from GPT about the collelation between watching films about war, violence, and racism and real-life violence</h3>
+    <p id="observation4_part5" style='display:none; text-align: left;'>The set prompt string for this exercise is:</p>
+    <br>
+    <textarea id="observation4_promptbox_ex1" style='display:none; text-align: left;' rows="3" cols="100" placeholder="prompt string"></textarea>
+    <br>
+    <h3 id="observation4_part6" style='display:none; text-align: left;'>[0] Input OpenAI key</h3>
+    <p id="observation4_part7" style="display:none; text-align: left;">Obtain an OpenAI key at <a href="https://openai.com/">OpenAI</a>.  After filling in the fields and OpenAI key, click the Run Selection button.</p>
+    
+    <input id="observation4_apikey_ex1" type="text" value="" placeholder="Enter OpenAI key" rows="1" cols="50" style='display:none; text-align: left; width: 400px;'>
+    <br><br>
+    <button id="observation4_part8" onclick="observation4_run_selection_exercise1()" style='display:none; text-align: left;'>Run Selection</button>
+    <br>
+    <h3 id="observation4_part9" style='display:none; text-align: left;'>[1] Model responses: factual response from GPT</h3>
+    <br>
+    <textarea id="observation4_outData_GPT_info_about_watching_violence" style='display:none; text-align: left;' rows="20" cols="100" placeholder="Model response: GPT_info_about_watching_violence" style='text-align: left;'></textarea>
+    <!-- Exercise 2 -->
+    <h3 id="observation4_part10" style='display:none; text-align: left;'>Exercise 2 - part 1 : learn about character traits of tv/movie characters.</h3>
+
+    <p id="observation4_part11" style='display:none; text-align: left;'>Type in your favorate tv series or movie character and learn what their character traits and career are in the tv series or movie. The set prompt string for this exercise is: </p>
+    
+    <textarea id="observation4_promptbox_ex2part1" style='display:none; text-align: left;' rows="3" cols="100" placeholder="prompt string"></textarea>
+    
 
     <!-- --------------------------------------------------- -->
 
@@ -975,6 +1006,22 @@ But, reliable rules can be oppressive things when proof of experience are lackin
         border-radius: 5px;
       }
 
+      textarea#observation4_promptbox_ex1 {
+        background-color: #b8c0d6;
+        border: 0.5px grey;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      textarea#observation4_promptbox_ex2part1 {
+        background-color: #b8c0d6;
+        border: 0.5px grey;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
       label {
         font-size: 1em;
         font-weight: bold;
@@ -1569,15 +1616,46 @@ the least number of words using a numbered list.`;
     // -----------------------------------
 
     function observation4_unhide(){
-      var observation4_h2 = document.getElementById("observation4_h2");
-      observation4_h2.style.display = "block";
-      observation4_h2.className ='show';
+      document.getElementById("observation4_part0").style.display = "block";
+      document.getElementById("observation4_part1").style.display = "block";
+      document.getElementById("observation4_part2").style.display = "block";
+      document.getElementById("observation4_part3").style.display = "block";
+      document.getElementById("observation4_part4").style.display = "block";
+      document.getElementById("observation4_part5").style.display = "block";
+      document.getElementById("observation4_promptbox_ex1").style.display = "block";
+      document.getElementById("observation4_part6").style.display = "block";
+      document.getElementById("observation4_part7").style.display = "block";
+      document.getElementById("observation4_apikey_ex1").style.display = "block";
+      document.getElementById("observation4_part8").style.display = "block";
+      document.getElementById("observation4_part9").style.display = "block";
+      document.getElementById("observation4_outData_GPT_info_about_watching_violence").style.display = "block";
+      
+      document.getElementById("observation4_part10").style.display = "block";
+      document.getElementById("observation4_part11").style.display = "block";
+      document.getElementById("observation4_promptbox_ex2part1").style.display = "block";
+
+      // Fill-in prompt string
+      document.getElementById("observation4_promptbox_ex1").innerHTML = `Is there a correlation between watching films about war, violence, and racism and real-life violence? After answering yes or no, please give 3 main references in an ordered list from most to least relevant.`;
+
+      // Fill-in prompt string
+      document.getElementById("observation4_promptbox_ex2part1").innerHTML = `What character traits and career is the character {character_name} in the {tv_series_or_movie} {film_name} known for? List each attribute using the least number of words using a numbered list.`;
+
     }
 
+
     function observation4_hide(){
-      var observation4_h2 = document.getElementById("observation4_h2");
-      observation4_h2.style.display = "none";
-      observation4_h2.className ='show';
+      document.getElementById("observation4_part0").style.display = "none";
+      document.getElementById("observation4_part1").style.display = "none";
+      document.getElementById("observation4_part2").style.display = "none";
+      document.getElementById("observation4_part3").style.display = "none";
+      document.getElementById("observation4_part4").style.display = "none";
+      document.getElementById("observation4_part5").style.display = "none";
+      document.getElementById("observation4_promptbox_ex1").style.display = "none";
+      document.getElementById("observation4_outData_GPT_info_about_watching_violence").style.display = "none";
+      document.getElementById("observation4_part6").style.display = "none";
+      document.getElementById("observation4_part7").style.display = "none";
+      document.getElementById("observation4_promptbox_ex2part1").style.display = "none";
+
     }
 
     // -----------------------------------
@@ -2019,7 +2097,7 @@ the least number of words using a numbered list.`;
       // ---------------------
 
       // Automatically scroll to text
-      document.getElementById("observation4_h2").scrollIntoView();
+      document.getElementById("observation4_part0").scrollIntoView();
 
     } // end of async function observation4()
     
@@ -3005,6 +3083,44 @@ the least number of words using a numbered list.`;
 
     // -----------------------------------
 
+
+    async function observation4_run_selection_exercise1() {
+
+      const OPENAI_API_KEY = document.getElementById("observation4_apikey_ex1").value;
+
+      var model_name = 'gpt-3.5-turbo'
+      
+      var system_content = "You are a helpful assistant"
+
+      var assistant_content = "You know about tv series, films, and human behavior in demographical areas. You give advice about how similar people's behavior is to behavior observed in tv series and movies."
+
+      var temperature = 0
+
+      var headers = {"Content-Type": "application/json", "Authorization": 'Bearer ' + OPENAI_API_KEY}
+      
+      var url = 'https://api.openai.com/v1/chat/completions'
+
+      // -----------------------------------
+      // Output
+      var prompt = `Is there a correlation between watching films about war, violence, and racism and real-life violence? 
+After answering yes or no, please give 3 main references in an ordered list from most to least relevant.`
+
+      var messages = [{"role": "system", "content": system_content}, {"role": "user", "content": prompt}, {"role": "assistant", "content": assistant_content}];
+      var data = {"model": model_name, 'messages': messages, 'temperature': temperature};
+      var options = {method : 'post', headers: headers, body : JSON.stringify(data)};
+
+      // -----------------------------------
+
+      try {
+        // Output: Print text part to a text area
+        await fetch(url, options).then(res => res.json()).then(res => {document.getElementById("observation4_outData_GPT_info_about_watching_violence").innerHTML = JSON.parse(JSON.stringify(res))['choices'][0]['message']['content'];})
+      } 
+      catch (error) 
+      {
+        document.getElementById("observation4_outData_GPT_info_about_watching_violence").innerHTML = error;
+      }
+
+    } // end of async function observation4_run_selection_exercise1()
 
     // -----------------------------------
 
