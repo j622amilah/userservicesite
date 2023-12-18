@@ -7,6 +7,8 @@
     
     <!-- HTML -->
 
+    <input id="CLIENT_ID" type="text" value="" placeholder="CLIENT_ID" rows="1" cols="50" style='text-align: center; width: 400px;'>
+
     <button id="step0_submit_form_way0" onclick="step0_submit_form_way0()" style='text-align: left;'>step0_submit_form_way0</button>
 
     <br><br>
@@ -32,21 +34,15 @@
       // -------------------
       // Start monitoring events as soon as script starts
       // -------------------
-      // it seems like it is always running, so I can just start it running at the start of script
-      // window.addEventListener("locationchange", function(){ document.getElementById("outData1").innerHTML = window.location.href; });
+      // https://j622amilah.github.io/userservicesite/rest_api_github.html
 
       // -------------------
 
       var SCOPES = 'https://www.googleapis.com/auth/bigquery https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloud-platform.read-only';
 
-      const API_KEY = "AIzaSyDw0as0jiC_L9W9jqbOJgH7BbO5m0QWaAQ";
-      var CLIENT_ID = '982455389157-9o2j34k1qff8cc1apqbec9so842istai.apps.googleusercontent.com';
-
       var REDIRECT_URI = 'https://j622amilah.github.io/userservicesite/Observations_of_a_Data_Scientist.html';
       // OR
       // var REDIRECT_URI = 'https://script.google.com';
-
-      var CLIENT_SECRET = "";  // for trading in the authorization_code for the access_token
 
       // -------------------
 
@@ -74,6 +70,8 @@
         var form = document.createElement('form');
         form.setAttribute('method', 'GET'); // Send as a GET request.
         form.setAttribute('action', URL);
+
+        const CLIENT_ID = document.getElementById("CLIENT_ID").value;
 
         // Parameters to pass to OAuth 2.0 endpoint.
         var params = {'client_id': CLIENT_ID, 'response_type': 'token', 'redirect_uri': REDIRECT_URI, 'scope': SCOPES, 'include_granted_scopes': 'true', 'state': 'pass-through value'};
